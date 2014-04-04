@@ -1,0 +1,24 @@
+<!DOCTYPE validators PUBLIC "-//OpenSymphony Group//XWork Validator 1.0.2//EN" "http://www.opensymphony.com/xwork/xwork-validator-1.0.2.dtd"> 
+<validators name="required" class="com.opensymphony.xwork2.validator.validators.RequiredFieldValidator">
+<field name="password">
+<field-validator type="required" trim="true">
+<message>
+Please enter password.
+</message>
+</field-validator>
+</field>
+<field name="loginid">
+<field-validator type="required" trim="true">
+<message>
+Please enter loginid.
+</message>
+</field-validator>
+</field>
+<field name="userName">
+<field-validator type="required" trim="true">
+<message>
+Please enter User Name.
+</message>
+</field-validator>
+</field>
+</validators>

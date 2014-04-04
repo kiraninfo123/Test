@@ -1,0 +1,160 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+
+<struts> 
+<include file="struts-default.xml"/>
+<package name="mgmt" extends="struts-default">
+
+
+
+
+
+		
+<!--For registration and login purpose -->
+
+<action name="login"  method="login" class="com.collaba.management.action.Registration">
+	<result name="success">home_mod.jsp</result>
+	<result name="input">login.jsp</result>
+	<result name="error">login.jsp</result>
+</action>
+<action name="register" method="register" class="com.collaba.management.action.Registration1">
+  <result name="input">Registration.jsp</result>
+  <result name="success">home_mod.jsp</result>
+  <result name="builder">projectdetail.jsp</result>
+  <result name="error">Registration.jsp</result>
+</action>
+<action name="Find" method="Find" class="com.collaba.management.action.Registration">
+  <result name="success">password.jsp</result>
+  <result name="error">forgotpassword.jsp</result>
+  <result name="input">forgotpassword.jsp</result>
+</action>
+<action name="update" method="update" class="com.collaba.management.action.Registration1">
+  <result name="success">updateuser.jsp</result>
+</action>
+<action name="delete" method="delete" class="com.collaba.management.action.Registration1">
+  <result name="success">deleteuser.jsp</result>
+</action>
+<action name="deleteuser"  method="deleteuser" class="com.collaba.management.action.Registration1">
+	<result name="success">message.jsp</result>
+	<result name="error">deleteuser.jsp</result>
+</action>
+<action name="updateuser"  method="updateuser" class="com.collaba.management.action.Registration1">
+	<result name="success">Registration1.jsp</result>
+	<result name="error">updateuser.jsp</result>
+</action>
+<action name="registeragain"  method="registeragain" class="com.collaba.management.action.Registration1">
+	<result name="success">home_mod.jsp</result>
+	<result name="builder">detail.jsp</result>
+	<result name="error">Registration1.jsp</result>
+</action>
+<action name="detail"  method="detail" class="com.collaba.management.action.Registration1">
+	<result name="success">home_mod.jsp</result>
+	<result name="error">detail.jsp</result>
+</action>
+<action name="projectdetail"  method="projectdetail" class="com.collaba.management.action.Registration1">
+	<result name="success">home_mod.jsp</result>
+	<result name="error">projectdetail.jsp</result>
+</action>
+
+
+
+
+<!--for property purpose -->
+
+<action name="quicksearch" method="quicksearch" class="com.collaba.management.action.property">
+	<result name="success">quicksearch.jsp</result>
+	<result name="error">quicksearch.jsp</result>
+</action>
+<action name="deleteproperty" method="deleteproperty" class="com.collaba.management.action.property">
+	<result name="success">message.jsp</result>
+	<result name="error">quicksearch.jsp</result>
+</action>
+<action name="updateproperty" method="updateproperty" class="com.collaba.management.action.property">
+	<result name="success">updateproperty.jsp</result>
+	<result name="error">quicksearch.jsp</result>
+</action>
+<action name="updateproperties" method="updateproperties" class="com.collaba.management.action.property">
+	<result name="success">message2.jsp</result>
+	<result name="error">quicksearch.jsp</result>
+</action>
+<action name="search" method="search" class="com.collaba.management.action.property">
+	<result name="success">searchview.jsp</result>
+	<result name="error">searchview.jsp</result>
+</action>
+<action name="postproperty" method="postproperty" class="com.collaba.management.action.property">
+	<result name="success">home_mod.jsp</result>
+	<result name="error">postproperty.jsp</result>
+</action>
+<action name="loan" method="loan" class="com.collaba.management.action.property">
+	<result name="success">message1.jsp</result>
+	<result name="input">home_mod.jsp</result>
+</action>
+<action name="applyresume" method="career" class="com.collaba.management.action.property">
+	<result name="success">message1.jsp</result>
+	<result name="input">home_mod.jsp</result>
+</action>
+<action name="postrequirements" method="postrequirements" class="com.collaba.management.action.property">
+	<result name="success">home_mod.jsp</result>
+</action>
+<action name="service" method="service" class="com.collaba.management.action.property">
+	<result name="success">welcome.jsp</result>
+	<result name="error">error.jsp</result>
+</action>
+<action name="searchproject" method="searchproject" class="com.collaba.management.action.property">
+	<result name="success">projectsearch.jsp</result>
+	<result name="error">error.jsp</result>
+</action>
+<action name="searchbuilder" method="searchbuilder" class="com.collaba.management.action.property">
+	<result name="success">buildersearch.jsp</result>
+	<result name="error">error.jsp</result>
+</action>
+<action name="buil" method="buil" class="com.collaba.management.action.property">
+	<result name="success">builderdetails.jsp</result>
+	<result name="error">error.jsp</result>
+</action>
+<action name="buil1" method="buil" class="com.collaba.management.action.property">
+	<result name="success">builderdetails.jsp</result>
+	<result name="error">error.jsp</result>
+</action>
+
+<!--for allied purpose  -->
+
+<action name="allied" method="allied" class="com.collaba.management.action.alliedactions">
+	<result name="architect">architect.jsp</result>
+	<result name="vaastu">vaastu.jsp</result>
+	<result name="builder">developers.jsp</result>
+	<result name="building">materials.jsp</result>
+	<result name="contractor">building.jsp</result>
+	<result name="select">home_mod.jsp</result>
+</action>
+
+<action name="allieddelete" method="allieddelete" class="com.collaba.management.action.alliedactions">
+	<result name="success">welcome2.jsp</result>
+	<result name="error">error.jsp</result>
+</action>
+<action name="alliedupdate" method="alliedupdate" class="com.collaba.management.action.alliedactions">
+	<result name="success">myservices1.jsp</result>
+	<result name="error">error.jsp</result>
+</action>
+<action name="allieddetail" method="allieddetail" class="com.collaba.management.action.alliedactions">
+	<result name="success">alliedservices.jsp</result>
+	<result name="error">error.jsp</result>
+</action>
+<action name="alliedlogin1" method="alliedlogin1" class="com.collaba.management.action.alliedactions">
+	<result name="success">.jsp</result>
+	<result name="error">alliedlogin1.jsp</result>
+</action>
+<action name="alliedlogin2" method="alliedlogin2" class="com.collaba.management.action.alliedactions">
+	<result name="success">s.jsp</result>
+	<result name="error">alliedlogin2.jsp</result>
+</action>
+<action name="myservices1" method="myservices1" class="com.collaba.management.action.alliedactions">
+	<result name="success">message2.jsp</result>
+	<result name="error">myservices1.jsp</result>
+</action>
+
+
+</package>
+</struts>

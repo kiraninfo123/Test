@@ -1,0 +1,6 @@
+INDEX VERSION 1.122+D:\Chat\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+1054183084.index
+814762167.index
+2558695311.index
+535894176.index
+194336011.index
