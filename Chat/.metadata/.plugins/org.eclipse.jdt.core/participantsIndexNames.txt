@@ -1,3 +1,0 @@
-INDEX VERSION 1.126
-D:\Chat\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3417376567.index
-\StrutsProject\src
